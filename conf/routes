@@ -1,1 +1,2 @@
 GET /    com.murali.sample.controllers.HomeController.showHome
+GET /register    com.murali.sample.controllers.HomeController.registerUser
