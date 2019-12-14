@@ -13,7 +13,7 @@ class HomeController  @Inject()(cc: ControllerComponents) extends AbstractContro
 
 
 
-   def postUrl = routes.HomeController.registerUser()
+def postUrl = routes.HomeController.registerUser()
 
 
   def showHome = Action {implicit request =>
