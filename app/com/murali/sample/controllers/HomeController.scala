@@ -11,12 +11,10 @@ import play.api.data.Forms._
 class HomeController  @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
 
 
+  def postUrl = routes.HomeController.registerUser()
 
 
-def postUrl = routes.HomeController.registerUser()
-
-
-  def showHome = Action {implicit request =>
+  def showHome = Action { implicit request =>
 
     Ok(index())
   }
