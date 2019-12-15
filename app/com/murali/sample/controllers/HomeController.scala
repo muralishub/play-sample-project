@@ -15,7 +15,6 @@ class HomeController  @Inject()(cc: ControllerComponents) extends AbstractContro
 
 
   def showHome = Action { implicit request =>
-
     Ok(index())
   }
 

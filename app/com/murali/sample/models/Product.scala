@@ -7,7 +7,6 @@ import play.api.data.Forms._
 
 case class Product(name: String)
 
-
 object ProductForm {
 
   val productForm = Form(
