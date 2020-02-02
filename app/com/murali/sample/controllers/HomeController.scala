@@ -16,8 +16,6 @@ class HomeController  @Inject()(cc: ControllerComponents) extends AbstractContro
     Ok(index())
   }
 
-
-
   def registerUser = Action { implicit  request =>
 
    ProductForm.productForm.bindFromRequest.fold(
