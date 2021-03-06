@@ -11,9 +11,6 @@ import play.api.data.Forms._
 class HomeController  @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
 
 
-  def postUrl = routes.HomeController.registerUser()
-
-
   def showHome = Action { implicit request =>
 
     Ok(index())
@@ -26,9 +23,7 @@ class HomeController  @Inject()(cc: ControllerComponents) extends AbstractContro
    ProductForm.productForm.bindFromRequest.fold(
       formWithErrors => BadRequest,
      product =>  {
-        product.name
-        println(product.name)
-        Ok("product OK!")
+           Ok("product OK!")
       })
   }
 }
